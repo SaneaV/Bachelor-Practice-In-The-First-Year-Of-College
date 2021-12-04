@@ -25,43 +25,43 @@ int main()
         bool SmallMain = false;
         cout<<"||=================================================||"<<endl<<"||";
         SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | Yellow));
-        cout<<setw(33)<<"Äîáðî ïîæàëîâàòü!";
+        cout<<setw(33)<<"Добро пожаловать!";
         SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
         cout<<setw(18)<<"||"<<endl;
         cout<<"||"<<setw(51)<<"||"<<endl;
 
         cout<<"||=================================================||"<<endl;
         cout<<"||=================================================||"<<endl;
-        cout<<"||1. Èíôîðìàöèÿ î ó÷åíèêàõ."<<setw(26)<<"||"<<endl;
+        cout<<"||1. Информация о учениках."<<setw(26)<<"||"<<endl;
         cout<<"||=================================================||"<<endl;
-        cout<<"||2. Äîáàâèòü ó÷åíèêà â ñïèñêè."<<setw(22)<<"||"<<endl;
+        cout<<"||2. Добавить ученика в списки."<<setw(22)<<"||"<<endl;
         cout<<"||=================================================||"<<endl;
-        cout<<"||3. Óäàëèòü ó÷åíèêà èç ñïèñêîâ."<<setw(21)<<"||"<<endl;
+        cout<<"||3. Удалить ученика из списков."<<setw(21)<<"||"<<endl;
         cout<<"||=================================================||"<<endl;
-        cout<<"||4. Ñîðòèðîâêà ó÷åíèêîâ."<<setw(28)<<"||"<<endl;
+        cout<<"||4. Сортировка учеников."<<setw(28)<<"||"<<endl;
         cout<<"||=================================================||"<<endl;
-        cout<<"||5. Èñïðàâëåíèå îöåíîê çà ÁÀÊ."<<setw(22)<<"||"<<endl;
+        cout<<"||5. Исправление оценок за БАК."<<setw(22)<<"||"<<endl;
         cout<<"||=================================================||"<<endl;
-        cout<<"||6. Ó÷åíèêè èç îäíîãî øêîëüíîãî ó÷åðåæäåíèÿ."<<setw(8)<<"||"<<endl;
+        cout<<"||6. Ученики из одного школьного учереждения."<<setw(8)<<"||"<<endl;
         cout<<"||=================================================||"<<endl;
-        cout<<"||7. Ó÷åíèêè ñ îòðèöàòåëüíûì áàëëîì."<<setw(17)<<"||"<<endl;
+        cout<<"||7. Ученики с отрицательным баллом."<<setw(17)<<"||"<<endl;
         cout<<"||=================================================||"<<endl;
-        cout<<"||8. Ñðåäíèé áàëë ïî ó÷åáíîìó ó÷åðåæäåíèþ."<<setw(11)<<"||"<<endl;
+        cout<<"||8. Средний балл по учебному учереждению."<<setw(11)<<"||"<<endl;
         cout<<"||=================================================||"<<endl;
-        cout<<"||9. Ó÷åíèêè, ïîäàâøèå íà àïïåëÿöèþ."<<setw(17)<<"||"<<endl;
+        cout<<"||9. Ученики, подавшие на аппеляцию."<<setw(17)<<"||"<<endl;
         cout<<"||=================================================||"<<endl<<"||";
         SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
-        cout<<"0. Âûõîä èç ïðîãðàììû.";
+        cout<<"0. Выход из программы.";
         SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
         cout<<setw(29)<<"||"<<endl<<"||=================================================||"<<endl;
         SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
-        cout<<"||Íàä ïðîãðàììîé ðàáîòàë: ";
+        cout<<"||Над программой работал: ";
         SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
-        cout<<"Âè÷åâ Àëåêñàíäð";
+        cout<<"Вичев Александр";
         SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
         cout<<setw(12)<<"||"<<endl;
         cout<<"||=================================================||"<<endl;
-        cout<<"   Äàòà è âðåìÿ îòêðûòèÿ: "<<asctime(timeinfo);
+        cout<<"   Дата и время открытия: "<<asctime(timeinfo);
 
 
         if (_kbhit)
@@ -75,14 +75,14 @@ int main()
                     system("cls");
                     cout<<"||=================================================||"<<endl<<"||";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | Yellow));
-                    cout<<setw(35)<<"Èíôîðìàöèÿ î ó÷åíèêàõ.";
+                    cout<<setw(35)<<"Информация о учениках.";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                     cout<<setw(16)<<"||"<<endl<<"||=================================================||"<<endl<<"||";
-                    cout<<"1. Ïîñìîòðåòü îáùèé ñïèñîê."<<setw(24)<<"||"<<endl;
+                    cout<<"1. Посмотреть общий список."<<setw(24)<<"||"<<endl;
                     cout<<"||=================================================||"<<endl<<"||";
-                    cout<<"2. Ïîñìîòðåòü ñïèñîê ïîäàâøèõ íà àïïåëÿöèþ."<<setw(8)<<"||"<<endl;
+                    cout<<"2. Посмотреть список подавших на аппеляцию."<<setw(8)<<"||"<<endl;
                     cout<<"||=================================================||"<<endl<<"||";
-                    cout<<"3. Âåðíóòüñÿ â ìåíþ."<<setw(31)<<"||"<<endl;
+                    cout<<"3. Вернуться в меню."<<setw(31)<<"||"<<endl;
                     cout<<"||=================================================||"<<endl;
 
                     if(_kbhit)
@@ -120,7 +120,7 @@ int main()
                             system("cls");
                             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
                             cout<<"||=================================================||"<<endl<<"||";
-                            cout<<setw(40)<<"ÂÛÁÅÐÈÒÅ ÑÓÙÅÑÒÂÓÞÙÈÉ ÂÀÐÈÀÍÒ!"<<setw(11)<<"||"<<endl;
+                            cout<<setw(40)<<"ВЫБЕРИТЕ СУЩЕСТВУЮЩИЙ ВАРИАНТ!"<<setw(11)<<"||"<<endl;
                             cout<<"||=================================================||"<<endl;
                             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                             Sleep(500);
@@ -138,14 +138,14 @@ int main()
                     system("cls");
                     cout<<"||====================================================||"<<endl<<"||";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | Yellow));
-                    cout<<setw(30)<<"Äîáàâèòü ó÷åíèêà.";
+                    cout<<setw(30)<<"Добавить ученика.";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                     cout<<setw(24)<<"||"<<endl<<"||====================================================||"<<endl<<"||";
-                    cout<<"1. Äîáàâèòü ó÷åíèêà â îáùèé ñïèñîê."<<setw(19)<<"||"<<endl;
+                    cout<<"1. Добавить ученика в общий список."<<setw(19)<<"||"<<endl;
                     cout<<"||====================================================||"<<endl<<"||";
-                    cout<<"2. Äîáàâèòü ó÷åíèêà â ñïèñîê ïîäàâøèõ íà àïïåëÿöèþ."<<" ||"<<endl;
+                    cout<<"2. Добавить ученика в список подавших на аппеляцию."<<" ||"<<endl;
                     cout<<"||====================================================||"<<endl<<"||";
-                    cout<<"3. Âåðíóòüñÿ â ìåíþ."<<setw(34)<<"||"<<endl;
+                    cout<<"3. Вернуться в меню."<<setw(34)<<"||"<<endl;
                     cout<<"||====================================================||"<<endl;
 
                     if (_kbhit)
@@ -159,7 +159,7 @@ int main()
                             AddStudent();
                             cout<<"||====================================================||"<<endl<<"||";
                             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
-                            cout<<setw(35)<<"Ñòóäåíò äîáàâëåí!";
+                            cout<<setw(35)<<"Студент добавлен!";
                             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                             cout<<setw(19)<<"||"<<endl<<"||====================================================||"<<endl<<endl;
                             system("PAUSE");
@@ -174,7 +174,7 @@ int main()
                             AddAppel();
                             cout<<"||====================================================||"<<endl<<"||";
                             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
-                            cout<<setw(35)<<"Ñòóäåíò äîáàâëåí!";
+                            cout<<setw(35)<<"Студент добавлен!";
                             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                             cout<<setw(19)<<"||"<<endl<<"||====================================================||"<<endl<<endl;
                             system("PAUSE");
@@ -193,7 +193,7 @@ int main()
                             system("cls");
                             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
                             cout<<"||=================================================||"<<endl<<"||";
-                            cout<<setw(40)<<"ÂÛÁÅÐÈÒÅ ÑÓÙÅÑÒÂÓÞÙÈÉ ÂÀÐÈÀÍÒ!"<<setw(11)<<"||"<<endl;
+                            cout<<setw(40)<<"ВЫБЕРИТЕ СУЩЕСТВУЮЩИЙ ВАРИАНТ!"<<setw(11)<<"||"<<endl;
                             cout<<"||=================================================||"<<endl;
                             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                             Sleep(500);
@@ -212,14 +212,14 @@ int main()
                     system("cls");
                     cout<<"||====================================================||"<<endl<<"||";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | Yellow));
-                    cout<<setw(34)<<"Óäàëèòü ó÷åíèêà.";
+                    cout<<setw(34)<<"Удалить ученика.";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                     cout<<setw(20)<<"||"<<endl<<"||====================================================||"<<endl<<"||";
-                    cout<<"1. Óäàëèòü ó÷åíèêà èç îáùåãî ñïèñêà."<<setw(18)<<"||"<<endl;
+                    cout<<"1. Удалить ученика из общего списка."<<setw(18)<<"||"<<endl;
                     cout<<"||====================================================||"<<endl<<"||";
-                    cout<<"2. Óäàëèòü ó÷åíèêà èç ñïèñêà ïîäàâøèõ íà àïïåëÿöèþ."<<" ||"<<endl;
+                    cout<<"2. Удалить ученика из списка подавших на аппеляцию."<<" ||"<<endl;
                     cout<<"||====================================================||"<<endl<<"||";
-                    cout<<"3. Âåðíóòüñÿ â ìåíþ."<<setw(34)<<"||"<<endl;
+                    cout<<"3. Вернуться в меню."<<setw(34)<<"||"<<endl;
                     cout<<"||====================================================||"<<endl;
 
                     if (_kbhit)
@@ -258,7 +258,7 @@ int main()
                             system("cls");
                             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
                             cout<<"||=================================================||"<<endl<<"||";
-                            cout<<setw(40)<<"ÂÛÁÅÐÈÒÅ ÑÓÙÅÑÒÂÓÞÙÈÉ ÂÀÐÈÀÍÒ!"<<setw(11)<<"||"<<endl;
+                            cout<<setw(40)<<"ВЫБЕРИТЕ СУЩЕСТВУЮЩИЙ ВАРИАНТ!"<<setw(11)<<"||"<<endl;
                             cout<<"||=================================================||"<<endl;
                             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                             Sleep(500);
@@ -276,14 +276,14 @@ int main()
                     system("cls");
                     cout<<"||====================================================||"<<endl<<"||";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | Yellow));
-                    cout<<setw(35)<<"Ñîðòèðîâêà ó÷åíèêîâ.";
+                    cout<<setw(35)<<"Сортировка учеников.";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                     cout<<setw(19)<<"||"<<endl<<"||====================================================||"<<endl<<"||";
-                    cout<<"1. Ñîðòèðîâàòü ãóìàíèòàðèåâ."<<setw(26)<<"||"<<endl;
+                    cout<<"1. Сортировать гуманитариев."<<setw(26)<<"||"<<endl;
                     cout<<"||====================================================||"<<endl<<"||";
-                    cout<<"2. Ñîðòèðîâàòü ðåàëüíèêîâ."<<setw(28)<<"||"<<endl;
+                    cout<<"2. Сортировать реальников."<<setw(28)<<"||"<<endl;
                     cout<<"||====================================================||"<<endl<<"||";
-                    cout<<"3. Âåðíóòüñÿ â ìåíþ."<<setw(34)<<"||"<<endl;
+                    cout<<"3. Вернуться в меню."<<setw(34)<<"||"<<endl;
                     cout<<"||====================================================||";
 
                     if (_kbhit)
@@ -323,7 +323,7 @@ int main()
                             system("cls");
                             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
                             cout<<"||=================================================||"<<endl<<"||";
-                            cout<<setw(40)<<"ÂÛÁÅÐÈÒÅ ÑÓÙÅÑÒÂÓÞÙÈÉ ÂÀÐÈÀÍÒ!"<<setw(11)<<"||"<<endl;
+                            cout<<setw(40)<<"ВЫБЕРИТЕ СУЩЕСТВУЮЩИЙ ВАРИАНТ!"<<setw(11)<<"||"<<endl;
                             cout<<"||=================================================||"<<endl;
                             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                             Sleep(500);
@@ -346,12 +346,12 @@ int main()
                     system("cls");
                     cout<<"||====================================================||"<<endl<<"||";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
-                    cout<<setw(43)<<"Èñïðàâëåíèå îöåíîê ïðîøëî óäà÷íî!";
+                    cout<<setw(43)<<"Исправление оценок прошло удачно!";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                     cout<<setw(11)<<"||"<<endl<<"||====================================================||"<<endl<<"||";
-                    cout<<"1. Ïîêàçàòü íîâûé ñïèñîê."<<setw(29)<<"||"<<endl;
+                    cout<<"1. Показать новый список."<<setw(29)<<"||"<<endl;
                     cout<<"||====================================================||"<<endl<<"||";
-                    cout<<"2. Âåðíóòüñÿ â ìåíþ."<<setw(34)<<"||"<<endl;
+                    cout<<"2. Вернуться в меню."<<setw(34)<<"||"<<endl;
                     cout<<"||====================================================||";
 
                     if (_kbhit)
@@ -378,7 +378,7 @@ int main()
                             system("cls");
                             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
                             cout<<"||=================================================||"<<endl<<"||";
-                            cout<<setw(40)<<"ÂÛÁÅÐÈÒÅ ÑÓÙÅÑÒÂÓÞÙÈÉ ÂÀÐÈÀÍÒ!"<<setw(11)<<"||"<<endl;
+                            cout<<setw(40)<<"ВЫБЕРИТЕ СУЩЕСТВУЮЩИЙ ВАРИАНТ!"<<setw(11)<<"||"<<endl;
                             cout<<"||=================================================||"<<endl;
                             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                             Sleep(500);
@@ -397,14 +397,14 @@ int main()
                     system("cls");
                     cout<<"||====================================================||"<<endl<<"||";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | Yellow));
-                    cout<<setw(47)<<"Ó÷åíèêè èç îäíîãî ó÷åáíîãî ó÷åðåæäåíèÿ!";
+                    cout<<setw(47)<<"Ученики из одного учебного учереждения!";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                     cout<<setw(7)<<"||"<<endl<<"||====================================================||"<<endl<<"||";
-                    cout<<"1. Çàïèñàòü äàííûå â ôàéë."<<setw(28)<<"||"<<endl;
+                    cout<<"1. Записать данные в файл."<<setw(28)<<"||"<<endl;
                     cout<<"||====================================================||"<<endl<<"||";
-                    cout<<"2. Ïîêàçàòü äàííûå â ôàéëå."<<setw(27)<<"||"<<endl;
+                    cout<<"2. Показать данные в файле."<<setw(27)<<"||"<<endl;
                     cout<<"||====================================================||"<<endl<<"||";
-                    cout<<"3. Âåðíóòüñÿ â ìåíþ."<<setw(34)<<"||"<<endl;
+                    cout<<"3. Вернуться в меню."<<setw(34)<<"||"<<endl;
                     cout<<"||====================================================||";
 
                     if (_kbhit)
@@ -442,7 +442,7 @@ int main()
                             system("cls");
                             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
                             cout<<"||=================================================||"<<endl<<"||";
-                            cout<<setw(40)<<"ÂÛÁÅÐÈÒÅ ÑÓÙÅÑÒÂÓÞÙÈÉ ÂÀÐÈÀÍÒ!"<<setw(11)<<"||"<<endl;
+                            cout<<setw(40)<<"ВЫБЕРИТЕ СУЩЕСТВУЮЩИЙ ВАРИАНТ!"<<setw(11)<<"||"<<endl;
                             cout<<"||=================================================||"<<endl;
                             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                             Sleep(500);
@@ -461,14 +461,14 @@ int main()
                     system("cls");
                     cout<<"||====================================================||"<<endl<<"||";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | Yellow));
-                    cout<<setw(40)<<"Ó÷åíèêè ñ îòðèöàòåëüíûì áàëëîì.";
+                    cout<<setw(40)<<"Ученики с отрицательным баллом.";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                     cout<<setw(14)<<"||"<<endl<<"||====================================================||"<<endl<<"||";
-                    cout<<"1. Èç îáùåãî ñïèñêà."<<setw(34)<<"||"<<endl;
+                    cout<<"1. Из общего списка."<<setw(34)<<"||"<<endl;
                     cout<<"||====================================================||"<<endl<<"||";
-                    cout<<"2. Èç ñïèñêà ïîäàâøèõ íà àïïåëÿöèþ."<<setw(19)<<"||"<<endl;
+                    cout<<"2. Из списка подавших на аппеляцию."<<setw(19)<<"||"<<endl;
                     cout<<"||====================================================||"<<endl<<"||";
-                    cout<<"3. Âåðíóòüñÿ â ìåíþ."<<setw(34)<<"||"<<endl;
+                    cout<<"3. Вернуться в меню."<<setw(34)<<"||"<<endl;
                     cout<<"||====================================================||";
 
                     if (_kbhit)
@@ -506,7 +506,7 @@ int main()
                             system("cls");
                             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
                             cout<<"||=================================================||"<<endl<<"||";
-                            cout<<setw(40)<<"ÂÛÁÅÐÈÒÅ ÑÓÙÅÑÒÂÓÞÙÈÉ ÂÀÐÈÀÍÒ!"<<setw(11)<<"||"<<endl;
+                            cout<<setw(40)<<"ВЫБЕРИТЕ СУЩЕСТВУЮЩИЙ ВАРИАНТ!"<<setw(11)<<"||"<<endl;
                             cout<<"||=================================================||"<<endl;
                             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                             Sleep(500);
@@ -547,14 +547,14 @@ int main()
                     system("cls");
                     cout<<"||=================================================||"<<endl<<"||";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | Yellow));
-                    cout<<setw(46)<<"Âû óâåðåíû, ÷òî õîòèòå âûéòè èç ïðîãðàììû?";
+                    cout<<setw(46)<<"Вы уверены, что хотите выйти из программы?";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                     cout<<setw(5)<<"||"<<endl<<"||"<<setw(51)<<"||"<<endl;
                     cout<<"||=================================================||"<<endl<<"||";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
-                    cout<<"\t1. Íåò.";
+                    cout<<"\t1. Нет.";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
-                    cout<<"\t\t\t\t2. Äà.";
+                    cout<<"\t\t\t\t2. Да.";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                     cout<<setw(7)<<"||"<<endl<<"||=================================================||"<<endl;
                     if (_kbhit)
@@ -578,7 +578,7 @@ int main()
                             system("cls");
                             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
                             cout<<"||=================================================||"<<endl<<"||";
-                            cout<<setw(40)<<"ÂÛÁÅÐÈÒÅ ÑÓÙÅÑÒÂÓÞÙÈÉ ÂÀÐÈÀÍÒ!"<<setw(11)<<"||"<<endl;
+                            cout<<setw(40)<<"ВЫБЕРИТЕ СУЩЕСТВУЮЩИЙ ВАРИАНТ!"<<setw(11)<<"||"<<endl;
                             cout<<"||=================================================||"<<endl;
                             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                             Sleep(500);
@@ -595,7 +595,7 @@ int main()
                 system("cls");
                 SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
                 cout<<"||=================================================||"<<endl<<"||";
-                cout<<setw(40)<<"ÂÛÁÅÐÈÒÅ ÑÓÙÅÑÒÂÓÞÙÈÉ ÂÀÐÈÀÍÒ!"<<setw(11)<<"||"<<endl;
+                cout<<setw(40)<<"ВЫБЕРИТЕ СУЩЕСТВУЮЩИЙ ВАРИАНТ!"<<setw(11)<<"||"<<endl;
                 cout<<"||=================================================||"<<endl;
                 SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                 Sleep(500);
@@ -607,7 +607,7 @@ int main()
     NICEWORK();
     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
     cout<<"||=================================================||"<<endl<<"||";
-    cout<<setw(45)<<"Ïðîãðàììà óñïåøíî çàêîí÷èëà âûïîëíåíèå."<<setw(6)<<"||"<<endl;
+    cout<<setw(45)<<"Программа успешно закончила выполнение."<<setw(6)<<"||"<<endl;
     cout<<"||=================================================||"<<endl;
     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
 
